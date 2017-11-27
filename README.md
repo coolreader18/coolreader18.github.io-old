@@ -1,2 +1,2 @@
 # coolreader18.github.io
-github pages
+https://coolreader18.github.io
