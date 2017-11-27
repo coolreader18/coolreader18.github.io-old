@@ -11,6 +11,16 @@
 </head>
 
 <body>
+  <nav>
+    <div class="nav-wrapper">
+      <a class="brand-logo">Hi</a>
+      <ul class="right">
+        {{ for navitem in site.pages }}
+          <li><a href="{{ site.github.url }}{{ navitem.url }}">{{ navitem.title }}</a></li>
+        {{ endfor }}
+      </ul>
+    </div>
+  </nav>
   {{ content }}
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
