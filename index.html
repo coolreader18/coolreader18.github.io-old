@@ -4,9 +4,21 @@ layout: default
 <h1 class="center-align">{{ site.title }}</h1>
 
 <div class="carousel">
-  <a class="carousel-item"><div class="card"><div class="card-content"><span class="card-title">one</span></div></div></a>
-  <a class="carousel-item"><div class="card"><div class="card-content"><span class="card-title">two</span></div></div></a>
-</div>
+  {{ for carouselitem in site.data.domains.hcarousel }}
+    {{ site.github.url }}{{ carouselitem.url }} {{ carouselitem.title }}
+
+    <a class="carousel-item">
+      <div class="card small">
+        <div class="card-image">
+
+        </div>
+        <div class="card-content">
+          <span class="card-title">one</span>
+        </div><
+        /div>
+      </a>
+      {{ endfor }}
+    </div>
 
 <script>
 $(document).ready(function(){
