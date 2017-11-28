@@ -16,10 +16,10 @@ layout: default
         </div>
         <div class="card-action">
           {%- if carouselitem.url -%}
-          <a class="waves-effect waves-teal btn-flat" href="{{ carouselitem.url }}">View Website</a>
+          <a class="waves-effect waves-teal btn-flat" target="_blank" href="{{ carouselitem.url }}">View Website</a>
           {%- endif -%}
           {%- if carouselitem.github -%}
-          <a class="waves-effect waves-black btn-flat" href="{{ carouselitem.github }}">View on Github</a>
+          <a class="waves-effect waves-black btn-flat" target="_blank" href="{{ carouselitem.github }}"><i class="octicon octicon-mark-github left">mark-github</i>View on Github</a>
           {%- endif -%}
         </div>
       </div>
