@@ -4,7 +4,7 @@ layout: default
 <h1 class="center-align">{{ site.title }}</h1>
 
 <div class="carousel">
-  {%- for carouselitem in site.data.hcarousel -%}
+  {% for carouselitem in site.data.hcarousel %}
     <a class="carousel-item">
       <div class="card small">
         <div class="card-image">
@@ -24,7 +24,7 @@ layout: default
         </div>
       </div>
     </a>
-  {%- endfor -%}
+  {% endfor %}
 </div>
 
 <script>
