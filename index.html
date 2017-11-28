@@ -5,16 +5,14 @@ layout: default
 
 <div class="carousel">
   {%- for carouselitem in site.data.hcarousel -%}
-    {{ site.github.url }}{{ carouselitem.url }} {{ carouselitem.title }}
-
     <a class="carousel-item">
       <div class="card small">
         <div class="card-image">
           <img src="{{ carouselitem.img }}">
-          <span class="card-title">{{ carouselitem.title }}</span>
+          <span class="card-title">{{ carouselitem.name }}</span>
         </div>
         <div class="card-content">
-          <span class="card-title">one</span>
+          <p>{{ carouselitem.description }}</p>
         </div>
         <div class="card-action">
           {%- if carouselitem.url -%}
