@@ -5,8 +5,7 @@ layout: default
 
 <div class="carousel">
   {% for carouselitem in site.data.hcarousel %}
-    <a class="carousel-item">
-      <div class="card small">
+      <div class="card small carousel-item">
         <div class="card-image">
           <img src="{{ carouselitem.img }}">
           <span class="card-title">{{ carouselitem.name }}</span>
@@ -23,7 +22,6 @@ layout: default
           {%- endif -%}
         </div>
       </div>
-    </a>
   {% endfor %}
 </div>
 
