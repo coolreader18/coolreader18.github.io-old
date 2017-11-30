@@ -1,28 +1,28 @@
 ---
-title: home
+title: Home
 layout: default
 ---
 <h1 class="center-align">{{ site.title }}</h1>
 
 <div class="carousel">
   {%- for carouselitem in site.data.hcarousel -%}
-      <div class="card medium carousel-item">
-        <div class="card-image">
-          <img src="{{ carouselitem.img }}">
-          <span class="card-title">{{ carouselitem.name }}</span>
-        </div>
-        <div class="card-content">
-          <p>{{ carouselitem.description }}</p>
-        </div>
-        <div class="card-action">
-          {%- if carouselitem.url -%}
-          <a class="waves-effect waves-teal btn-flat" target="_blank" href="{{ carouselitem.url }}">View Website</a>
-          {%- endif -%}
-          {%- if carouselitem.github -%}
-          <a class="waves-effect waves-black btn-flat" target="_blank" href="{{ carouselitem.github }}"><i class="octicon octicon-mark-github left"></i>View on Github</a>
-          {%- endif -%}
-        </div>
-      </div>
+  <div class="card medium carousel-item" style="width:500px;height:350px;">
+    <div class="card-image">
+      <img src="{{ carouselitem.img }}">
+      <span class="card-title">{{ carouselitem.name }}</span>
+    </div>
+    <div class="card-content">
+      <p>{{ carouselitem.description }}</p>
+    </div>
+    <div class="card-action">
+      {%- if carouselitem.url -%}
+      <a class="waves-effect waves-teal btn-flat" target="_blank" href="{{ carouselitem.url }}">View Website</a>
+      {%- endif -%}
+      {%- if carouselitem.github -%}
+      <a class="waves-effect waves-black btn-flat" target="_blank" href="{{ carouselitem.github }}"><i class="octicon octicon-mark-github left"></i>View on Github</a>
+      {%- endif -%}
+    </div>
+  </div>
   {%- endfor -%}
 </div>
 
