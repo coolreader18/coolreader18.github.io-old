@@ -20,9 +20,9 @@
     <div class="nav-wrapper">
       <a class="brand-logo">Hi</a>
       <ul class="right">
-        {{ for navitem in site.pages }}
+        {%- for navitem in site.pages -%}
           <li><a href="{{ site.github.url }}{{ navitem.url }}">{{ navitem.title }}</a></li>
-        {{ endfor }}
+        {%- endfor -%}
       </ul>
     </div>
   </nav>
