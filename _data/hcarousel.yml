@@ -4,3 +4,8 @@
  url: https://coolreader18.github.io/calculators/
  img: http://materializecss.com/images/sample-1.jpg
  description: A tool to easily create calculators.
+-
+ name: WiiU HBAS Changer
+ github: https://github.com/coolreader18/hbas-repo-changer
+ img: assets/images/faked-repo-changer.png
+ description: A Wii U Homebrew app to change the HBAS's repository.
